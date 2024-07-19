@@ -1,0 +1,211 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+}
+
+:root {
+  --White: hsl(0, 0%, 100%);
+  --Stone-100: hsl(30, 54%, 90%);
+  --Stone-150: hsl(30, 18%, 87%);
+  --Stone-600: hsl(30, 10%, 34%);
+  --Stone-900: hsl(24, 5%, 18%);
+  --Brown-800: hsl(14, 45%, 36%);
+  --Rose-800: hsl(332, 51%, 32%);
+  --Rose-50: hsl(330, 100%, 98%);
+  --Font-size: 16px;
+  /* font-family: "Young Serif", serif; */
+}
+
+h1,
+span {
+  color: var(--Stone-900);
+}
+
+h2 {
+  color: var(--Brown-800);
+  font-family: "Young Serif", serif;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+p {
+  color: var(--Stone-300);
+}
+span {
+  font-weight: 700;
+}
+
+i {
+  font-size: 5px;
+}
+body {
+  background-color: var(--Stone-100);
+  padding: 5rem 0rem;
+}
+
+main {
+  width: 46%;
+  margin: auto;
+  background-color: var(--White);
+  min-width: 698px;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  border-radius: 20px;
+  gap: 2rem;
+}
+
+#img-content {
+  width: 100%;
+}
+
+#img-content img {
+  width: 100%;
+  height: 100%;
+  min-height: 270px;
+  border-radius: 10px;
+}
+
+#food-description {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#food-preparation {
+  background-color: var(--Rose-50);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border-radius: 5px;
+}
+
+#food-preparation h3 {
+  color: var(--Rose-800);
+  font-size: 1.2rem;
+}
+
+#list {
+  /* background-color: yellow; */
+  margin-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.list-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.list-content,
+.intro-content {
+  display: flex;
+  gap: 0.5rem;
+}
+
+#food-Ingredients,
+#food-instructions {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.making-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+#food-instructions ul {
+  background-color: red;
+}
+
+#food-instructions ul li {
+  list-style-type: decimal;
+}
+
+.intro-wrapper {
+  display: flex;
+  gap: 1rem;
+}
+
+.intro-wrapper h5 {
+  font-size: 1rem;
+  color: var(--Brown-800);
+}
+
+#Nutrition {
+  border-top: 1px solid var(--Stone-150);
+  padding-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#Nutrition ul {
+}
+
+#Nutrition ul li {
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem 0rem;
+  border-bottom: 1px solid var(--Stone-150);
+  gap: 2rem;
+}
+
+#Nutrition ul li:last-child {
+  border: none;
+}
+
+#Nutrition ul li span {
+  font-weight: 400;
+  width: 120px;
+}
+#Nutrition ul li p {
+  color: var(--Brown-800);
+  font-weight: 700;
+  text-align: left;
+  width: 120px;
+}
+
+@media screen and (max-width: 750px) {
+  main {
+    width: 95%;
+    min-width: 320px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  body {
+    padding: 0rem;
+  }
+  main {
+    width: 100%;
+    padding: 0;
+    border-radius: 0px;
+    padding-bottom: 3rem;
+  }
+  #img-content img {
+    border-radius: 0px;
+  }
+
+  #food-preparation {
+    border-radius: 5px;
+    margin: 0rem 1.5rem;
+    padding: 1rem;
+    font-size: 0.9rem;
+  }
+
+  #img-content {
+    padding: 0 !important;
+  }
+
+  main > div {
+    padding: 0rem 1.5rem;
+  }
+}
